@@ -1,0 +1,356 @@
+{
+	"info": {
+		"_postman_id": "97ae62e6-6afe-44b8-bf0a-9123207f4d94",
+		"name": "Space API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "34570293",
+		"_collection_link": "https://opensphere.postman.co/workspace/OpenSphere_STOREINO_TEAM~d5cbb150-d74b-438c-930f-5ba11903004a/collection/34570293-97ae62e6-6afe-44b8-bf0a-9123207f4d94?action=share&source=collection_link&creator=34570293"
+	},
+	"item": [
+		{
+			"name": "Subscribers",
+			"item": [
+				{
+					"name": "getSubscribers",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3003/dev/space/subscribers/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3003",
+							"path": [
+								"dev",
+								"space",
+								"subscribers",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateSubscriber",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"aymane kabiri\",\r\n  \"countries\": [\"morocco\"],\r\n  \"phone\": \"23456789000\",\r\n  \"city\":\"agadir\",\r\n  \"email\": \"aymanee@example.com\",\r\n  \"services\": [\"warehouses\", \"call center\"],\r\n  \"status\": \"INACTIVE\"\r\n}\r\n\r\n\r\n\r\n\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3003/dev/space/subscribers/662a3b7c3f7fdd5a20d7ed53",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3003",
+							"path": [
+								"dev",
+								"space",
+								"subscribers",
+								"662a3b7c3f7fdd5a20d7ed53"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteSubscriber",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3003/dev/space/subscribers/6630c399ed1436a4cc90e1c0,6630c2b4ed1436a4cc90e1be",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3003",
+							"path": [
+								"dev",
+								"space",
+								"subscribers",
+								"6630c399ed1436a4cc90e1c0,6630c2b4ed1436a4cc90e1be"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Leads",
+			"item": [
+				{
+					"name": "Get leads",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3003/dev/space/leads/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3003",
+							"path": [
+								"dev",
+								"space",
+								"leads",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update lead",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"name\": \"yasser aymane\",\r\n        \"services\": \"Delivery\"\r\n\r\n }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3003/dev/space/leads/6636f4e7f3b0c6014065656e",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3003",
+							"path": [
+								"dev",
+								"space",
+								"leads",
+								"6636f4e7f3b0c6014065656e"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AddLead",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3003/dev/space/leads/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3003",
+							"path": [
+								"dev",
+								"space",
+								"leads",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getLeadById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3003/dev/space/leads/662d360f8e1ee581ec956842",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3003",
+							"path": [
+								"dev",
+								"space",
+								"leads",
+								"662d360f8e1ee581ec956842"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteLead",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3003/dev/space/leads/6640196d1cd1936c707adde1,6640194a1cd1936c707adddf",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3003",
+							"path": [
+								"dev",
+								"space",
+								"leads",
+								"6640196d1cd1936c707adde1,6640194a1cd1936c707adddf"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Warehouses",
+			"item": [
+				{
+					"name": "getWarehouses",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3003/dev/space/warehouses",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3003",
+							"path": [
+								"dev",
+								"space",
+								"warehouses"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New warehouse",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"aymane\",\r\n    \"country\":\"morocco\",\r\n    \"city\":\"agadir\",\r\n    \"addressRefinement\":\"hhh\"\r\n    \r\n    \r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3003/dev/space/warehouses",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3003",
+							"path": [
+								"dev",
+								"space",
+								"warehouses"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateWarehouseAPI",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Updated Warehouse Name\",\r\n  \"status\": \"ACTIVE\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3003/dev/space/warehouses/66296b546e931bab9d3efd87",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3003",
+							"path": [
+								"dev",
+								"space",
+								"warehouses",
+								"66296b546e931bab9d3efd87"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteWarehouse",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3003/dev/space/warehouses/664021712a7b0bb80c32d6ee,663fdbdeec2410a5b06b43a7",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3003",
+							"path": [
+								"dev",
+								"space",
+								"warehouses",
+								"664021712a7b0bb80c32d6ee,663fdbdeec2410a5b06b43a7"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
